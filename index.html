@@ -1,44 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <button class="menu-btn">
+          <img src="./images/icon-menu.svg" alt="Menu" />
+        </button>
+        <img src="./images/logo.svg" alt="Sneakers" class="logo" />
+      </div>
+      <nav class="nav">
+        <button class="close-btn">
+          <img src="./images/icon-close.svg" alt="Close menu" />
+        </button>
+        <ul class="nav-list">
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <button class="cart-btn">
+          <img src="./images/icon-cart.svg" alt="Cart" />
+          <span class="cart-count">0</span>
+        </button>
+        <img src="./images/image-avatar.png" alt="Avatar" class="avatar" />
+      </div>
+    </header>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | E-commerce product page</title>
+    <div class="cart-modal">
+      <h3>Cart</h3>
+      <div class="cart-content">
+        <p class="empty-cart">Your cart is empty.</p>
+      </div>
+    </div>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <main class="main">
+      <section class="product">
+        <div class="product-gallery"></div>
 
-  Collections
-  Men
-  Women
-  About
-  Contact
+        <div class="product-info">
+          <p class="company">SNEAKER COMPANY</p>
+          <h1 class="product-title">Fall Limited Edition Sneakers</h1>
+          <p class="product-description">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they'll withstand everything
+            the weather can offer.
+          </p>
 
-  Sneaker Company
+          <div class="price-container">
+            <div class="current-price">
+              <span>$125.00</span>
+              <span class="discount">50%</span>
+            </div>
+            <p class="original-price">$250.00</p>
+          </div>
 
-  Fall Limited Edition Sneakers
+          <div class="product-actions">
+            <div class="quantity-selector">
+              <button class="quantity-btn minus">
+                <img src="./images/icon-minus.svg" alt="Decrease quantity" />
+              </button>
+              <span class="quantity">0</span>
+              <button class="quantity-btn plus">
+                <img src="./images/icon-plus.svg" alt="Increase quantity" />
+              </button>
+            </div>
+            <button class="add-to-cart">
+              <img src="./images/icon-cart.svg" alt="" />
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
-
-  $125.00
-  50%
-  $250.00
-
-  0
-  Add to cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
