@@ -54,8 +54,8 @@ body {
 }
 
 .avatar {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
 }
 
@@ -211,7 +211,7 @@ body {
   gap: 1rem;
 }
 
-.thumbnail-btn x {
+.thumbnail-btn {
   width: 90px;
   height: 90px;
   border: none;
